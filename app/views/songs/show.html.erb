@@ -1,0 +1,6 @@
+<h1>🎵 <%= @song.name %> 🎵</h1>
+<label>Artist: </label>
+  <%= link_to @song.artist.name, artist_path(@song.artist) %><br>
+<label>Genre: </label>
+  <%= link_to @song.genre.name, genre_path(@song.genre) %><br>
+<%= link_to '<button type="button">Edit</button>'.html_safe, edit_song_path %>

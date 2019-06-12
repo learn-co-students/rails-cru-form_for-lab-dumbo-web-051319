@@ -1,0 +1,12 @@
+<h1>My Artist</h1>
+<ul>
+<%= form_for @artist do %>
+  <li>
+  My artist name: <%= @artist.name %>
+  <li>
+  <p>My artist bio: <%= @artist.bio %></p>
+  </li>
+<% end %>
+</ul>
+
+<%= link_to "Artist Index", artists_path %>

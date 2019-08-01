@@ -1,0 +1,8 @@
+<h1> All artists🎧🎸 </h1>
+<!-- <label> Squad</label> -->
+<ul>
+  <li>
+  <% @artists.each do |artist| %>
+  <%= link_to artist.name, artist %> <li>
+  <% end %>
+</ul>

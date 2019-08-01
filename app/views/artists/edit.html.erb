@@ -1,0 +1,10 @@
+<h1> Edit Page </h1>
+
+<%=form_for @artist do |f| %>
+<%=f.label :name, "Name:" %>
+<%=f.text_field :name  %> <br><br>
+<%=f.label :bio, "Biography:" %>
+<%=f.text_field :bio  %> <br><br>
+<%=f.submit "Update Artist" %>
+<%# <%= button_to "Delete", artists_path(@artist), method: :delete %> %>
+<%end%>

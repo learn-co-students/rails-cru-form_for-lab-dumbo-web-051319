@@ -1,0 +1,8 @@
+<h1> <%= @artist.name %>'s Page😜🎙 </h1>
+
+
+<!-- <label>Bio</label> -->
+<label> Bio:</label> <br>
+<p> <%= @artist.bio%>  </p>
+<%= button_to "Edit Artist", edit_artist_path(@artist), method: :get  %>
+<%= button_to "Delete Artist", artists_path(@artist),   method: :delete %>

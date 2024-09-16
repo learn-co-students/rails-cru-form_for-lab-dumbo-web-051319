@@ -1,0 +1,10 @@
+<h1> Welcome to <%= @song.name %> Page </h1>
+<marquee> 👋🏿👋🏿👋🏿👋🏿👋🏿👋🏿 </marquee>
+<h2> Please look around !!!!! </h2> <br>
+<h3>  View Genre</h3>
+</h3>
+<h3> View all artist </h3>
+<h3> <%= link_to @song.artist.name, "/artists/#{@song.artist.id}" %></h3>
+<%= button_to "Edit Song", edit_song_path(@song), method: :get  %>
+<%= button_to "Delete Song", songs_path(@song), method: :delete %>
+<h3> <%= link_to @song.genre.name, "/genres/#{@song.genre.id}" %></h3>

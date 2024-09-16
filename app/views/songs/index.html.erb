@@ -1,0 +1,7 @@
+   <h1> All Songs 📣🎤 💿 </h1>
+   <ul>
+     <li>
+     <% @songs.each do |song| %>
+    <p> <%= link_to song.name, song %> </p> <li>
+     <% end %>
+ </ul>

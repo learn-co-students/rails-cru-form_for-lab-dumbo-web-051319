@@ -1,0 +1,9 @@
+<h1>Artists</h1>
+
+<h4><%= link_to "View All Songs", "/songs" %> | <%= link_to "View All Genres", "/genres" %></h4>
+
+<ul>
+<% @artists.each do |artist| %>
+   <li>Artist Name: <%= link_to artist.name, artist%></li>
+<% end %>
+</ul>

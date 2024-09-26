@@ -1,0 +1,9 @@
+<h1>Edit</h1>
+
+<%= form_for @artist do |t| %>
+<%= t.label :name %><br>
+<%= t.text_field :name %><br><br>
+<%= t.label :bio %><br>
+<%= t.text_area :bio %><br>
+<%= t.submit %>
+<% end %>
